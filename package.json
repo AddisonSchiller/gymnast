@@ -89,8 +89,8 @@
     "postcss-nesting": "4.2.1",
     "prettier": "1.10.2",
     "raw-loader": "0.5.1",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react": "16.3.0-alpha.0",
+    "react-dom": "16.3.0-alpha.0",
     "react-element-to-jsx-string": "13.1.0",
     "react-test-renderer": "16.2.0",
     "regenerator-runtime": "0.11.1",
@@ -140,7 +140,7 @@
     "commit": "git-cz",
     "contributors:add": "all-contributors add",
     "contributors:gen": "all-contributors generate",
-    "format-all": "git ls-files {src,test,storybook}*.{js,css} | xargs yarn format",
+    "format-all": "git ls-files {src,test,storybook,flow-typed}*.{js,css} | xargs yarn format",
     "format": "prettier --write --single-quote --no-semi --trailing-comma es5",
     "lint:css": "stylelint src/*.css stories/*.css",
     "lint:flow": "flow stop && flow --show-all-errors --include-warnings",
@@ -166,8 +166,7 @@
     }
   },
   "peerDependencies": {
-    "prop-types": ">=15",
-    "react": ">=15"
+    "react": ">=16.3"
   },
   "dependencies": {
     "cxs": "https://github.com/arahansen/cxs#d593d14e708c4f5c17cb2105cb9435ae87ade362",

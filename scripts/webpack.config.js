@@ -46,7 +46,6 @@ module.exports = {
   devtool: 'source-map',
   externals: {
     react: 'react',
-    'prop-types': 'prop-types',
   },
   module: {
     rules: [
