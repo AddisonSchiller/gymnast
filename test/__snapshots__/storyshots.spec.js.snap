@@ -9727,6 +9727,125 @@ exports[`Storyshots Config Provider Page Width 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="
+  cxs({
+  flexGrow: 1;
+  height: 100%
+}})
+   xnr_layout 
+  cxs({
+   > :not(.xnr_layout): {
+    maxWidth: 1224px
+  };
+  alignItems: center;
+  alignSelf: flex-start;
+  border: 0 transparent solid;
+  boxSizing: border-box;
+  display: flex;
+  flexFlow: column;
+  minWidth: 320px;
+  padding: 0;
+  width: 100%
+}})
+  "
+      style={Object {}}
+    >
+      <div
+        className="
+  cxs({
+  border: 0 transparent solid;
+  boxSizing: border-box;
+  display: flex;
+  flexFlow: row wrap;
+  width: 100%
+}})
+   
+  cxs({
+  flexGrow: 1
+}})
+   
+  cxs({
+  @media (max-width: 599px); @media (max-device-width: 599px): {
+    overflow: hidden;
+    paddingLeft: 0;
+    paddingRight: 0
+  };
+  @media (min-width: 600px) and (max-width: 899px); @media (min-device-width: 600px) and (max-device-width: 899px): {
+    paddingLeft: 36px;
+    paddingRight: 36px
+  };
+  @media (min-width: 900px); @media (min-device-width: 900px): {
+    paddingLeft: 36px;
+    paddingRight: 36px
+  }
+}})
+   
+  cxs({
+  justifyContent: center;
+  marginLeft: auto;
+  marginRight: auto
+}})
+  "
+        style={
+          Object {
+            "borderTopWidth": 24,
+          }
+        }
+      >
+        <div
+          className="
+  cxs({
+  border: 0 transparent solid;
+  boxSizing: border-box;
+  display: flex;
+  flexFlow: row wrap;
+  width: 100%
+}})
+   
+  cxs({
+  flexGrow: 1
+}})
+   
+  cxs({
+  @media (max-width: 599px); @media (max-device-width: 599px): {
+    flexShrink: 0;
+    width: calc(100% + 8px)
+  }
+}})
+  "
+          style={Object {}}
+        >
+          <div
+            className="
+  cxs({
+  border: 0 transparent solid;
+  boxSizing: border-box;
+  display: flex;
+  flexFlow: row wrap;
+  width: 100%
+}})
+   
+  cxs({
+  flexGrow: 1
+}})
+  "
+            style={
+              Object {
+                "backgroundColor": "#1d1f21",
+                "borderBottomWidth": 24,
+                "borderLeftWidth": 12,
+                "borderRightWidth": 12,
+                "borderTopWidth": 0,
+                "color": "#ffd700",
+              }
+            }
+          >
+            Full Width (No Limit)
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
