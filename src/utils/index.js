@@ -99,7 +99,9 @@ export function getCSS(
 
   if (typeof value === 'undefined') {
     return {}
-  } else if (prop.includes('padding')) {
+  }
+
+  if (prop.includes('padding')) {
     return { [prop]: num * base }
   }
 

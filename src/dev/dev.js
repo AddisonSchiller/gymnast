@@ -50,6 +50,7 @@ export default class Dev extends React.Component<Props, State> {
 
   onKeyDown = (e: KeyboardEvent) => {
     const { keyCode, useCtrl, useShift } = this.props
+    const { showOverlay } = this.state
     const pressedKey = e.keyCode || e.charCode || 0
     const ctrlKeyPressedOrNotRequired = !useCtrl || (e.ctrlKey || e.metaKey)
     const shiftKeyPressedOrNotRequired = !useShift || e.shiftKey
@@ -59,12 +60,14 @@ export default class Dev extends React.Component<Props, State> {
       shiftKeyPressedOrNotRequired &&
       keyCode === pressedKey
     ) {
-      this.setState({ showOverlay: !this.state.showOverlay })
+      this.setState({ showOverlay: !showOverlay })
     }
   }
 
   render() {
-    if (!this.state.showOverlay) {
+    const { showOverlay } = this.state
+
+    if (!showOverlay) {
       return null
     }
     const values = getValues(this.context)

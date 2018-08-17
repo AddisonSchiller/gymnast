@@ -1,10 +1,10 @@
 const { optimize } = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const overrideGlobal = require('./overrideGlobal')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const { resolve } = require('path')
 const { DefinePlugin } = require('webpack')
 const { compact } = require('lodash')
+const overrideGlobal = require('./overrideGlobal')
 
 const isProd = process.env.NODE_ENV === 'production'
 const root = resolve(__dirname, '../dist')
