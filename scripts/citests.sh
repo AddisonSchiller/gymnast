@@ -2,6 +2,13 @@
 
 set -e
 
+mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS
+
+./scripts/deploystorybook.sh
+git checkout $CIRCLE_SHA1
+
+yarn --ignore-engines
+yarn build
 yarn test:size                          # Validate bundle gzipped size
 yarn lint                               # Validate linting
 yarn test -- --coverage                 # Validate unit tests
